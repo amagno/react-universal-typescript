@@ -1,0 +1,6 @@
+{
+  "rules": {
+    "trailing-comma": true,
+    "semicolon": true
+  }
+}

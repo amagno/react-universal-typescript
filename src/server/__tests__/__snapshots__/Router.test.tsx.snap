@@ -1,0 +1,77 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test router test add 2 routes [/] | [/another] 1`] = `
+<TestComponent
+  context={Object {}}
+  params={Object {}}
+  pathname="/"
+/>
+`;
+
+exports[`test router test add 2 routes [/] | [/another] 2`] = `
+<AnotherComponent
+  context={Object {}}
+  params={Object {}}
+  pathname="/another"
+/>
+`;
+
+exports[`test router test add route with context data [text: test add with data] 1`] = `
+<TestComponent
+  context={
+    Object {
+      "text": "test add with data",
+    }
+  }
+  params={Object {}}
+  pathname="/"
+/>
+`;
+
+exports[`test router test init route with context params [text: hello world with params!] 1`] = `
+<div>
+  <h1>
+    hello world with params!
+  </h1>
+</div>
+`;
+
+exports[`test router test init simple route [/] | [/home/test] 1`] = `
+<div>
+  <h1>
+    Hello World
+  </h1>
+</div>
+`;
+
+exports[`test router test init simple route [/] | [/home/test] 2`] = `
+<div>
+  <h1>
+    Hello World 2!
+  </h1>
+</div>
+`;
+
+exports[`test router test route with url param /:user 1`] = `
+<TestComponent
+  context={Object {}}
+  params={
+    Object {
+      "user": "testing",
+    }
+  }
+  pathname="/testing"
+/>
+`;
+
+exports[`test router test state component 1`] = `
+<TestStateCompoent
+  context={
+    Object {
+      "text": "hello world componet class!",
+    }
+  }
+  params={Object {}}
+  pathname="/"
+/>
+`;
