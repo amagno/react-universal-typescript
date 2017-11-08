@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "test": "jest",
+    "test-ci": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "dependencies": {
     "colors": "^1.1.2",
@@ -22,6 +23,7 @@
     "@types/react-dom": "^16.0.2",
     "@types/supertest": "^2.0.3",
     "@types/universal-router": "^1.2.2",
+    "coveralls": "^3.0.0",
     "jest": "^21.2.1",
     "supertest": "^3.0.0",
     "ts-jest": "^21.1.4",
