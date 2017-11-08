@@ -3,7 +3,7 @@ import * as React from 'react';
 import { Routes } from 'universal-router';
 import Router from '../Router';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { RouteParamsInterface } from '../Interfaces';
+import { RouteParamsInterface } from '../CommonInterfaces';
 interface TestContext {
   text?: string;
 }

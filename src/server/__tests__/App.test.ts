@@ -15,18 +15,4 @@ describe('test app is running', () => {
     const req = await supertest(app.express()).get('/');
     expect(req.text).toMatchSnapshot();
   });
-  it('resolve router', async () => {
-    const universalRoutes: Routes<{}, string> = [
-      {
-        path: '/',
-        action: () => 'hello world!'
-      }
-    ];
-    
-    const router = new UniversalRouter(universalRoutes);
-    const data = await router.resolve({ pathname: '/'});
-    console.log(data);
-    
-    expect(data).toEqual('hello world!');
-  });
 });

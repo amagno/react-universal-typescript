@@ -1,5 +1,5 @@
 import { Routes, resolve } from 'universal-router';
-import { RouteParamsInterface } from './Interfaces';
+import { RouteParamsInterface } from './CommonInterfaces';
 import * as React from 'react';
 
 const UniversalRouter = require('universal-router');
