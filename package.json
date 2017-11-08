@@ -40,6 +40,6 @@
       "js",
       "json"
     ],
-    "collectCoverageFrom": ["src/**/*"]
+    "collectCoverageFrom": ["src/**/*.{ts,tsx}"]
   }
 }
