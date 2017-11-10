@@ -3,17 +3,15 @@
     "module": "commonjs",
     "target": "es6",
     "jsx": "react",
-    "outDir": "__build",
+    "outDir": "dist",
     "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "noImplicitThis": true,
-    "pretty": true,
-    "typeRoots": [
-      "src/types"
-    ]
+    "pretty": true
   },
   "exclude": [
-    "__build"
+    "dist"
   ],
   "include": [
     "src/**/*"

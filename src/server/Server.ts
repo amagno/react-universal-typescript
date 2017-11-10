@@ -1,18 +1,18 @@
-import * as express from 'express';
 import * as http from 'http';
-import { ConsoleLogger } from '../utils/Logger';
+import { info } from './Lib/logger';
+import { AppInterface } from './ServerInterfaces';
 
 class Server {
   private http: http.Server;
 
-  constructor(app: express.Application, options?: object) {
-    this.http = http.createServer(app);
+  constructor(app: AppInterface) {
+    this.http = http.createServer(app.express());
   }
   listen(port: number = 3000, address?: string) {
     this.http.listen(port, address, () => {
       const _port = this.http.address().port;
       const _address = this.http.address().address;
-      ConsoleLogger.info(`Server is running http://${_address}:${_port}/`);
+      info(`Server is running http://${_address}:${_port}/`);
     });
   }
 }

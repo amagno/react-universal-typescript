@@ -1,7 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-
-export default function (body: string, title?: string) {
+export const makeDocument = (body: string, title?: string): string  => {
   const html = fs.readFileSync(path.resolve('public', 'index.html')).toString();
 
   return html
@@ -10,4 +9,4 @@ export default function (body: string, title?: string) {
     .replace('{{body}}', body);
     // .replace('{{client}}', client)
   
-}
+};

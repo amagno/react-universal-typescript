@@ -1,0 +1,4 @@
+{
+  "ignore": "public/dist",
+  "ext": ".ts, .tsx"
+}
