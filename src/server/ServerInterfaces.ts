@@ -10,7 +10,6 @@ export interface AppMiddlewareInterface {
   use: express.Handler;
   dev?: boolean;
 }
-
 export interface BootOptionsInterface {
   routes: RouteProps[];
   port?: number;
